@@ -22,7 +22,7 @@ class Form extends Component {
     <form onSubmit={this.submitFormHandler}>
      <label htmlFor="weight" >Enter Weight:</label>
      <input name="weight" value={this.state.amount}
-       type="number"
+       type="text" pattern="[0-9]"
        onChange={(event)=> this.setState({amount: event.target.value})}
        />
      <input type="submit" value="Submit"/>
