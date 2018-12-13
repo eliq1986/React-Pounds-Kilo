@@ -1,17 +1,25 @@
 * {
      box-sizing: border-box;
 }
+
+html {
+    background-image: linear-gradient(to left, #BA5370, #F4E2D8);
+}
+
  body {
      font-family: 'Noto Serif SC', serif;
 }
- html {
-     background-image: linear-gradient(to left, #BA5370, #F4E2D8);
+
+h1 {
+  animation-name: moveFromLeft;
+  animation-duration: 2s;
 }
  h1, h2 {
      margin-top: 0;
      text-align: center;
      color: white;
      text-transform: uppercase;
+
 }
 
 
@@ -25,4 +33,17 @@ input[type="submit"]:hover {
     color: white;
     background: #BA5370;
     cursor: pointer;
+}
+
+
+@keyframes moveFromLeft{
+     0% {
+       opacity: 0;
+       transform: translateY(-100px);
+     }
+
+     100% {
+       opacity: 1;
+       transform: translate(0);
+     }
 }
