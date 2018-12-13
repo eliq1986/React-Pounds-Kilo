@@ -27,6 +27,15 @@ h1 {
      height: 30vh;
 }
 
+.lower-content {
+  animation-name: moveDown;
+  animation-duration: 1.5s;
+  animation-delay: 1.4s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: backwards;
+
+}
+
 /***PSEUDO*****/
 
 input[type="submit"]:hover {
@@ -45,5 +54,19 @@ input[type="submit"]:hover {
      100% {
        opacity: 1;
        transform: translate(0);
+     }
+}
+
+
+
+@keyframes moveDown{
+     0% {
+       transform: translateY(10px);
+     }
+   60% {
+     transform: translateY(50px);
+   }
+     100% {
+       transform: translateY(0);
      }
 }

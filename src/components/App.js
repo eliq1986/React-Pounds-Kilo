@@ -42,10 +42,12 @@ renderResult = () => {
 render() {
   return (
     <div>
-    <div className="center-content"></div>
+      <div className="center-content"></div>
       <h1>Pounds to Kilograms</h1>
-      <Form  lbsToKilo={this.convertLbsToKilograms}/>
+      <div class="lower-content">
+        <Form  lbsToKilo={this.convertLbsToKilograms}/>
         {this.renderResult()}
+      </div>
     </div>
   );
  }
