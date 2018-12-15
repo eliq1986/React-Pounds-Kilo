@@ -38,11 +38,6 @@ h1 {
 
 /***PSEUDO*****/
 
-input[type="submit"]:hover {
-    color: white;
-    background: #BA5370;
-    cursor: pointer;
-}
 
 
 @keyframes moveFromLeft{
