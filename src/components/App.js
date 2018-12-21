@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import 'normalize.css';
-import './app.css';
+import './App.scss';
 import Form from './Form';
 import Results from './Results';
 import NoResults from './NoResults';
@@ -41,7 +41,7 @@ renderResult = () => {
 
 render() {
   return (
-    <div>
+    <div class="container">
       <div className="center-content"></div>
       <h1>Pounds to Kilograms</h1>
       <div class="lower-content">
