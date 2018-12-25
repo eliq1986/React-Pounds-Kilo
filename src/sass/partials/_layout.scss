@@ -1,0 +1,48 @@
+h1, h2 {
+    margin-top: 0;
+    text-align: center;
+    color: $color-white;
+    text-transform: uppercase;
+}
+
+input {
+    margin: auto;
+    width: 20%;
+    padding: 1em;
+    border: none;
+}
+
+label {
+    margin: 10px auto;
+    font-weight: lighter;
+}
+input, label {
+    width: 20%;
+    display: block;
+    text-align: center;
+}
+
+
+input[type="text"] {
+    background: none;
+    color: $color-white;
+    font-size: 1.2em;
+    font-weight: bolder;
+    border-bottom: 2px solid $color-white;
+    width: 50%;
+    margin: auto;
+    max-width: 200px;
+    &:focus {
+        outline: none;
+    }
+}
+
+
+.container {
+    background-image: linear-gradient(to left,$color-primary-dark,$color-primary-light);
+    height: 100vh;
+}
+
+.center-content {
+    height: 30vh;
+}
