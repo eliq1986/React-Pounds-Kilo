@@ -1,9 +1,11 @@
+//Base
+$base: #BA5370;
 
 //Colors
-$base: #BA5370;
 $color-white: #fff;
-$color-primary-light: #F4E2D8;
-$color-primary-dark: darken($base, 25%);
+$complement: lighten($base, 40%);
+$color-primary-light: $complement;
+$color-primary-dark: darken($base, 10%);
 $color-box-shadow: #707070;
 
 
